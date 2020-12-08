@@ -63,6 +63,31 @@
       </div>
     </div>
   </div>
+  <div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="detail-cover"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="post-title my-3">Post title</h2>
+                <p class="post-text mb-3">Post-text</p>
+                <p>
+                  <small class="text-muted author">Raziel Iqui Balam</small>
+                  <small class="text-muted date">07 dic 2020</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Regresar</button>
+          <div class="btn btn-warning btn-sm">Leer más tarde</div>
+        </div>
+      </div>
+    </div>
+  </div>
   <nav class="navbar navbar-dark bg-dark">
     <a class="navbar-brand">Kodeblog</a>
     <button 
@@ -74,12 +99,12 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <ul class="list-group list-group-horizontal my-3 d-flex justify-content-end">
-          <li class="list-group-item">Dev</li>
-          <li class="list-group-item">Gaming</li>
-          <li class="list-group-item">Music</li>
-          <li class="list-group-item">Art</li>
-          <li class="list-group-item">Books</li>
+        <ul class="list-group list-group-horizontal my-3 d-flex justify-content-end filter-list">
+          <li class="list-group-item" data-filter-criteria="category" data-filter-value="Dev">Dev</li>
+          <li class="list-group-item" data-filter-criteria="category" data-filter-value="Gaming">Gaming</li>
+          <li class="list-group-item" data-filter-criteria="category" data-filter-value="Music">Music</li>
+          <li class="list-group-item" data-filter-criteria="category" data-filter-value="Art">Art</li>
+          <li class="list-group-item" data-filter-criteria="category" data-filter-value="Books">Books</li>
         </ul>
       </div>
     </div>
@@ -123,7 +148,10 @@
           <div class="card mb-3">
             <div class="row no-gutters">
               <div class="col-md-4">
-                <img src="https://picsum.photos/id/151/500" class="card-img" alt="...">
+                <div class="post-img">
+
+                </div>
+                <!--img src="https://picsum.photos/id/151/500" class="card-img" alt="..."-->
               </div>
               <div class="col-md-8">
                 <div class="card-body">

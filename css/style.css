@@ -1,0 +1,36 @@
+.card .post-img {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.card .post-img:after {
+  content: "";
+  padding-top: 100%;
+  display: block;
+}
+
+.filter-list li {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+
+.filter-list li:hover {
+  background-color: #333;
+  color: white;
+}
+
+#detailModal .detail-cover {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://picsum.photos/id/237/1000/800");
+}
+
+#detailModal .detail-cover:after {
+  content: "";
+  padding-top: 50%;
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */
